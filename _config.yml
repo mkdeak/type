@@ -15,6 +15,7 @@ twitter:     ''
 github:      ''
 instagram:   ''
 facebook:    ''
+contact_me_url: 'about#contact'
 
 markdown:  kramdown
 permalink: pretty
