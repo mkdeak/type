@@ -14,7 +14,7 @@
 }
 
 
-@include attention() {
+@media (prefers-color-scheme: dark) {
   .c-content{
     a:not(.c-btn) {
       @include attention() {
