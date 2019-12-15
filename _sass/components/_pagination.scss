@@ -40,7 +40,7 @@
 }
 
 
-@include attention() {
+@media (prefers-color-scheme: dark) {
   .c-pagination {
     @include attention() {
       color: $color-brand-darkmode;
