@@ -12,6 +12,7 @@ $color-black: #000000;
 $color-text-lightmode:  #323232;
 $color-text-darkmode: #dddddd;
 
+
 // Background Colors
 $bg-color-white: $color-white;
 $bg-color-dark:  #222228;
@@ -20,9 +21,15 @@ $bg-color-gray:  #FAFAFA;
 $color-bg-lightmode: $color-white;
 $color-bg-darkmode: #111111;
 
+
 // Border
 $color-border-lightmode: #E9EFF3;
 $color-border-darkmode: #5C5C5C;
+
+// Selections
+$color-selection-lightmode: #FFFFFF;
+$color-selection-darkmode: #000000;
+
 
 // Links
 $color-link-lightmode:        $color-text-lightmode;
@@ -31,16 +38,26 @@ $color-link-hover-lightmode:  $color-brand-lightmode;
 $color-link-darkmode: $color-text-darkmode;
 $color-link-hover-darkmode: $color-brand-darkmode;
 
+
+// Inputs
+$color-input-bg-lightmode: #FFFFFF;
+$color-input-txt-lightmode: #000000;
+
+$color-input-bg-darkmode: #000000;
+$color-input-txt-darkmode: #FFFFFF;
+
+
 // Code blocks
 $color-code-container-lightmode: #FAFAFA;
 $color-code-container-darkmode: #050505;
 
+
 // Buttons
-$color-button-txt-lightmode: #ffffff;
+$color-button-txt-lightmode: #FFFFFF;
 $color-button-bg-lightmode: #207cdf;
 $color-button-bg-hover-lightmode: #238cf6;
 
-$color-button-txt-darkmode: #000000;
+$color-button-txt-darkmode: #FFFFFF;
 $color-button-bg-darkmode: #df8320;
 $color-button-bg-hover-darkmode: #dc7309;
 

@@ -11,10 +11,13 @@ textarea {
   width: 100%;
   padding: $base-spacing-unit;
 
-  background-color: $color-border-lightmode;
+
+  border: 1px solid $color-border-lightmode;
   border-radius: 0;
   outline: none;
-  background-color: $color-white;
+
+  color: $color-input-txt-lightmode;
+  background-color: $color-input-bg-lightmode;
   font-size: $font-size-small;
 
   appearance: none;
@@ -34,6 +37,8 @@ textarea {
   select,
   textarea {
     border: 1px solid $color-border-darkmode;
+    color: $color-input-txt-darkmode;
+    background-color: $color-input-bg-darkmode;
 
     @include attention() {
       border: 1px solid $color-text-darkmode;
