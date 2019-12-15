@@ -8,5 +8,11 @@ hr {
 
   border: 0;
 
-  background-color: $color-border;
+  background-color: $color-border-lightmode;
+}
+
+@media (prefers-color-scheme: dark) {
+  hr {
+    background-color: $color-border-darkmode;
+  }
 }

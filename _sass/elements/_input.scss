@@ -2,9 +2,6 @@
   Elements > Inputs
 \*------------------------------------*/
 
-$input-border: $color-border;
-$input-border-focused: $color-text;
-
 input[type='text'],
 input[type='tel'],
 input[type='number'],
@@ -14,7 +11,7 @@ textarea {
   width: 100%;
   padding: $base-spacing-unit;
 
-  border: 1px solid $color-border;
+  background-color: $color-border-lightmode;
   border-radius: 0;
   outline: none;
   background-color: $color-white;
@@ -24,6 +21,22 @@ textarea {
   transition: $global-transition;
 
   @include attention() {
-    border: 1px solid $input-border-focused;
+    border: 1px solid $color-text-lightmode;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  input[type='text'],
+  input[type='tel'],
+  input[type='number'],
+  input[type='email'],
+  select,
+  textarea {
+    border: 1px solid $color-border-darkmode;
+
+    @include attention() {
+      border: 1px solid $color-text-darkmode;
+    }
   }
 }

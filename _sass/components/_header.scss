@@ -5,10 +5,19 @@
 .c-header {
   &__inner {
     padding: $base-spacing-unit 0;
-    border-bottom: 1px solid $color-border;
+    border-bottom: 1px solid $color-border-lightmode;
   }
 
   &__icon {
     vertical-align: middle;
+  }
+}
+
+
+@media (prefers-color-scheme: light) {
+.c-header {
+  &__inner {
+    border-bottom: 1px solid $color-border-darkmode;
+    }
   }
 }

@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 body {
-  color: $color-text;
+  color: $color-text-darkmode;
   font-size: $font-size-base;
   font-family: $font-base;
   font-weight: $font-weight-light;
@@ -11,6 +11,14 @@ body {
 
   -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $color-bg-darkmode;
+    color: $color-text-darkmode;
+  }
 }
 
 *::selection {

@@ -4,10 +4,17 @@
 
 a {
   text-decoration: none;
-  color: $color-link;
+  color: $color-link-lightmode;
   transition: $global-transition;
 
   @include attention() {
     text-decoration: underline;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  a {
+  color: $color-link-darkmode;
   }
 }

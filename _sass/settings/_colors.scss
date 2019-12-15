@@ -5,17 +5,27 @@
 // Colors
 $color-brand: #00A0FF;
 $color-white: #FFFFFF;
-$color-text:  #323232;
 $color-gray:  #2B5F72;
+$color-black: #000000;
+
+$color-text-lightmode:  #323232;
+$color-text-darkmode: #dddddd;
 
 // Background Colors
 $bg-color-white: $color-white;
 $bg-color-dark:  #222228;
 $bg-color-gray:  #FAFAFA;
 
+$color-bg-lightmode: $color-white;
+$color-bg-darkmode: $color-black;
+
 // Border
-$color-border: #E9EFF3;
+$color-border-lightmode: #E9EFF3;
+$color-border-darkmode: #A9A9A9;
 
 // Links
-$color-link:        $color-text;
-$color-link-hover:  $color-brand;
+$color-link-lightmode:        $color-text-lightmode;
+$color-link-hover-lightmode:  $color-brand;
+
+$color-link-darkmode: $color-text-darkmode;
+$color-link-hover-darkmode: $color-brand;

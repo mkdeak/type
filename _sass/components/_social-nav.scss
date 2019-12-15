@@ -4,18 +4,27 @@
 
 .c-social-nav {
   font-size: 14px;
-  
+
   &__item {
     display: inline-block;
   }
 
   &__icon {
-    fill: $color-text;
+    fill: $color-text-lightmode;
     vertical-align: middle;
     transition: $global-transition;
 
     @include attention() {
       fill: $color-brand;
+    }
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .c-social-nav {
+    &__icon {
+      fill: $color-text-darkmode;
     }
   }
 }

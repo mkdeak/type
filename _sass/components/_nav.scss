@@ -15,13 +15,26 @@
       color: $color-brand;
 
       .home-template &:not(:hover) {
-        color: $color-link;
+        color: $color-link-darkmode;
       }
     }
 
     @include attention() {
       color: $color-brand;
       text-decoration: none;
+    }
+  }
+}
+
+
+@media (prefers-color-scheme: light) {
+  .c-nav {
+    &__link {
+      &--current {
+        .home-template &:not(:hover) {
+          color: $color-link-darkmode;
+        }
+      }
     }
   }
 }

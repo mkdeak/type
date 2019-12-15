@@ -6,7 +6,7 @@
   display: block;
   padding: double($base-spacing-unit) 0;
   word-break: break-word;
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid $color-border-lightmode;
 
   &--first {
     padding-top: 0;
@@ -38,11 +38,21 @@
   }
 
   &:hover {
-    color: $color-text;
+    color: $color-text-lightmode;
     text-decoration: none;
 
     .c-post-card__title {
       color: $color-brand;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .c-post-card {
+    border-bottom: 1px solid $color-border-darkmode;
+
+    &:hover {
+      color: $color-text-darkmode;
     }
   }
 }
