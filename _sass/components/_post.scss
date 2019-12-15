@@ -46,6 +46,10 @@
 @media (prefers-color-scheme: dark)
 {
   .c-post {
+    &__title {
+      color: $color-title-darkmode;
+    }
+
     &__date {
       color: $color-date-darkmode;
     }
