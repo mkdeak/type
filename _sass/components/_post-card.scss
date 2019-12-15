@@ -30,7 +30,7 @@
 
   &__date {
     display: block;
-    color: red;
+    color: $color-date-lightmode;
     direction: ltr;
     font-size: $font-size-tiny;
     line-height: $line-height-small;
@@ -50,6 +50,10 @@
 @media (prefers-color-scheme: dark) {
   .c-post-card {
     border-bottom: 1px solid $color-border-darkmode;
+
+    &__date {
+      color: $color-date-darkmode;
+    }
 
     &:hover {
       color: $color-text-darkmode;
