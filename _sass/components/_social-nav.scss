@@ -15,7 +15,7 @@
     transition: $global-transition;
 
     @include attention() {
-      fill: $color-brand;
+      fill: $color-brand-lightmode;
     }
   }
 }
@@ -25,6 +25,10 @@
   .c-social-nav {
     &__icon {
       fill: $color-text-darkmode;
+
+      @include attention() {
+        fill: $color-brand-darkmode;
+      }
     }
   }
 }

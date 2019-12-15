@@ -12,7 +12,7 @@
     transition: $global-transition;
 
     &--current {
-      color: $color-brand;
+      color: $color-brand-lightmode;
 
       .home-template &:not(:hover) {
         color: $color-link-darkmode;
@@ -20,20 +20,26 @@
     }
 
     @include attention() {
-      color: $color-brand;
+      color: $color-brand-lightmode;
       text-decoration: none;
     }
   }
 }
 
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: darkmode) {
   .c-nav {
     &__link {
       &--current {
+        color: $color-brand-darkmode;
+
         .home-template &:not(:hover) {
           color: $color-link-darkmode;
         }
+      }
+
+      @include attention() {
+        color: $color-brand-darkmode;
       }
     }
   }

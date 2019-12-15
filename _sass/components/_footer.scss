@@ -4,5 +4,12 @@
 
 .c-footer {
   padding: double($base-spacing-unit) 0;
-  background-color: $bg-color-gray;
+  background-color: $color-footer-lightmode;
+}
+
+@media (prefers-color-scheme: dark) {
+  .c-footer {
+    background-color: $color-footer-darkmode;
+    border-top: 1px solid $color-border-darkmode;
+  }
 }

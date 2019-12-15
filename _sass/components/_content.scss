@@ -8,7 +8,18 @@
     text-decoration-skip: ink;
 
     @include attention() {
-      color: $color-brand;
+      color: $color-brand-lightmode;
+    }
+  }
+}
+
+
+@include attention() {
+  .c-content{
+    a:not(.c-btn) {
+      @include attention() {
+        color: $color-brand-darkmode;
+      }
     }
   }
 }

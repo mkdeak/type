@@ -2,8 +2,9 @@
 //  Settings > Colors
 // *----------------------------------*/
 
-// Colors
-$color-brand: #00A0FF;
+$color-brand-lightmode: #00A0FF;
+$color-brand-darkmode: #ff5f00;
+
 $color-white: #FFFFFF;
 $color-gray:  #2B5F72;
 $color-black: #000000;
@@ -17,15 +18,19 @@ $bg-color-dark:  #222228;
 $bg-color-gray:  #FAFAFA;
 
 $color-bg-lightmode: $color-white;
-$color-bg-darkmode: $color-black;
+$color-bg-darkmode: #111111;
 
 // Border
 $color-border-lightmode: #E9EFF3;
-$color-border-darkmode: #A9A9A9;
+$color-border-darkmode: #5C5C5C;
 
 // Links
 $color-link-lightmode:        $color-text-lightmode;
-$color-link-hover-lightmode:  $color-brand;
+$color-link-hover-lightmode:  $color-brand-lightmode;
 
 $color-link-darkmode: $color-text-darkmode;
-$color-link-hover-darkmode: $color-brand;
+$color-link-hover-darkmode: $color-brand-darkmode;
+
+// Footer
+$color-footer-lightmode: #FAFAFA;
+$color-footer-darkmode: $color-bg-darkmode;

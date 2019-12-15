@@ -42,7 +42,7 @@
     text-decoration: none;
 
     .c-post-card__title {
-      color: $color-brand;
+      color: $color-brand-lightmode;
     }
   }
 }
@@ -53,6 +53,10 @@
 
     &:hover {
       color: $color-text-darkmode;
+
+      .c-post-card__title {
+        color: $color-brand-darkmode;
+      }
     }
   }
 }

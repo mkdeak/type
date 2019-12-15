@@ -113,6 +113,13 @@ body {
         visibility: visible;
         background: $color-text-darkmode;
         }
+
+      .c-off-canvas-toggle--close & {
+          &:before,
+          &:after {
+            background-color: $color-text-darkmode;
+        }
+      }
     }
   }
 

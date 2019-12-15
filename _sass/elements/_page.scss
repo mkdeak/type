@@ -14,14 +14,19 @@ body {
 }
 
 
+*::selection {
+  color: $color-white;
+  background: $color-brand-lightmode;
+}
+
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: $color-bg-darkmode;
     color: $color-text-darkmode;
   }
-}
 
-*::selection {
-  color: $color-white;
-  background: $color-brand;
+  *::selection {
+    background: $color-brand-darkmode;
+  }
 }

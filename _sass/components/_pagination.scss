@@ -7,7 +7,7 @@
   transition: $global-transition;
 
   @include attention() {
-    color: $color-brand;
+    color: $color-brand-lightmode;
     text-decoration: none;
   }
 
@@ -35,6 +35,15 @@
 
     &--next {
       right: - half($base-spacing-unit);
+    }
+  }
+}
+
+
+@include attention() {
+  .c-pagination {
+    @include attention() {
+      color: $color-brand-darkmode;
     }
   }
 }
