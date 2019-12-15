@@ -5,7 +5,7 @@
 pre,
 code {
   font-family: $font-monospace;
-  background-color: $bg-color-gray;
+  background-color: $color-code-container-lightmode;
 }
 
 pre {
@@ -20,3 +20,11 @@ pre {
 
 li code,
 p code { padding: quarter($base-spacing-unit) half($base-spacing-unit); }
+
+
+@media (prefers-color-scheme: dark) {
+  pre,
+  code {
+    background-color: $color-code-container-darkmode;
+  }
+}
