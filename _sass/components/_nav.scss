@@ -15,7 +15,7 @@
       color: $color-brand-lightmode;
 
       .home-template &:not(:hover) {
-        color: $color-link-darkmode;
+        color: $color-link-lightmode;
       }
     }
 
@@ -27,7 +27,7 @@
 }
 
 
-@media (prefers-color-scheme: darkmode) {
+@media (prefers-color-scheme: dark) {
   .c-nav {
     &__link {
       &--current {
