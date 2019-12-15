@@ -4,5 +4,11 @@
 
 blockquote {
   padding-left: $base-spacing-unit;
-  border-left: 3px solid $color-gray;
+  border-left: 3px solid $color-blockquote-border-ligthmode;
+}
+
+@media (prefers-color-scheme: dark) {
+  blockquote {
+    border-left: 3px solid $color-blockquote-border-darkmode;
+  }
 }

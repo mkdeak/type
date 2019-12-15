@@ -5,20 +5,27 @@
 $color-brand-lightmode: #00A0FF;
 $color-brand-darkmode: #ff5f00;
 
-$color-white: #FFFFFF;
-$color-gray:  #2B5F72;
-$color-black: #000000;
+// Date
+$color-date-lightmode:  #2B5F72;
+$color-date-darkmode: #d4a08d;
 
+
+// Blockquote
+$color-blockquote-border-ligthmode: #2B5F72;
+$color-blockquote-border-darkmode: #d4a08d;
+
+
+// Text
 $color-text-lightmode:  #323232;
 $color-text-darkmode: #dddddd;
 
 
 // Background Colors
-$bg-color-white: $color-white;
+$bg-color-white: #FFFFFF;
 $bg-color-dark:  #222228;
 $bg-color-gray:  #FAFAFA;
 
-$color-bg-lightmode: $color-white;
+$color-bg-lightmode: #FFFFFF;
 $color-bg-darkmode: #111111;
 
 

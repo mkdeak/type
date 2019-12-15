@@ -24,7 +24,7 @@
     margin-bottom: $base-spacing-unit;
     font-size: $font-size-small;
     line-height: $line-height-small;
-    color: $color-gray;
+    color: $color-date-lightmode;
 
     &:after {
       position: absolute;
@@ -40,5 +40,14 @@
 
   &__image {
     margin: 0 auto $base-spacing-unit;
+  }
+}
+
+@media (prefers-color-scheme: dark)
+{
+  .c-post {
+    &__date {
+      color: $color-date-darkmode;
+    }
   }
 }
