@@ -12,16 +12,31 @@
     font-family: $font-base;
     line-height: $line-height-medium;
 
-    background-color: $bg-color-gray;
+    background-color: $color-tag-bg-lightmode;
     transition: $global-transition;
 
     @include attention() {
+      color: $color-brand-lightmode;
       text-decoration: none;
-      background-color: $bg-color-gray;
+      background-color: $color-tag-bg-lightmode;
     }
   }
 
   @include mq($until: tablet) {
     margin-bottom: $line-height-medium - half(quarter($line-height-medium));
+  }
+}
+
+@media (prefers-color-scheme: dark)
+{
+  .c-tags {
+    a {
+      background-color: $color-tag-bg-darkmode;
+
+      @include attention() {
+        color: $color-brand-darkmode;
+        background-color: $color-tag-bg-darkmode;
+      }
+    }
   }
 }
