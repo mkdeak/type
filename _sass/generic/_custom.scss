@@ -3,3 +3,13 @@
   float: left;
   margin-right: 1em;
 }
+
+.footnotes
+{
+  font-size: small;
+}
+
+.footnotes p
+{
+  margin-bottom: 0.5*($base-spacing-unit);
+}
