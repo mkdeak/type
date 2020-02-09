@@ -51,6 +51,15 @@
   .c-post-card {
     border-bottom: 1px solid $color-border-darkmode;
 
+    &--first {
+      padding-top: 0;
+    }
+
+    &--last {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
     &__title {
       color: $color-title-darkmode;
     }
