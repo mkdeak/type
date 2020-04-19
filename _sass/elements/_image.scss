@@ -7,3 +7,12 @@ img {
   max-width: 100%;
   font-style: italic;
 }
+
+
+@media (prefers-color-scheme: dark) {
+  img {
+    -webkit-filter:brightness(50%);
+    -moz-filter:brightness(50%);
+    filter:brightness(50%);
+  }
+}
