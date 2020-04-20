@@ -10,7 +10,7 @@ img {
 
 
 @media (prefers-color-scheme: dark) {
-  img {
+  img:not(.profile-img) {
     -webkit-filter:brightness(50%);
     -moz-filter:brightness(50%);
     filter:brightness(50%);
@@ -19,7 +19,7 @@ img {
     transition: all 0.7s ease;
   }
 
-  img:hover {
+  img:not(.profile-img):hover {
     -webkit-filter:brightness(90%);
     -moz-filter:brightness(90%);
     filter:brightness(90%);
