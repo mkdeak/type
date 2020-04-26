@@ -9,8 +9,12 @@
   font-size: small;
 }
 
+.footnotes li
+{
+  margin-bottom: 0.5*($base-spacing-unit);
+}
+
 .footnotes p
 {
-  display: inline-block;
-  margin-bottom: 0.5*($base-spacing-unit);
+  display: inline;
 }
